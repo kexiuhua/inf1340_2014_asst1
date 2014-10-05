@@ -15,8 +15,8 @@ __copyright__ = "2014 Xiuhua Ke"
 def checksum (upc):
     """
     Checks if the digits in a UPC is consistent with checksum
-
-    :param upc: a 12-digit universal product code
+    036000291452
+ :param upc: a 12-digit universal product code
     :return:
         Boolean: True, checksum is correct
         False, otherwise
