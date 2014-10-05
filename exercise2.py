@@ -6,16 +6,11 @@
     Assignment 1, Exercise 2, INF1340 Fall 2014
 """
 
-__author__ = 'Susan Sim'
-__email__ = "ses@drsusansim.org"
-
-__copyright__ = "2014 Susan Sim"
-__license__ = "MIT License"
-
-__status__ = "Prototype"
+__author__ = 'Xiuhua Ke'
+__email__ = "xiuhua.ke@mail.utoronto.ca"
+__copyright__ = "2014 Xiuhua Ke"
 
 # imports one per line
-
 
 def checksum (upc):
     """
