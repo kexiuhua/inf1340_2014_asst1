@@ -1,12 +1,12 @@
 
-   """ Assignment 1, Exercise 1, INF1340, Fall, 2014. Grade to gpa conversion
+""" Assignment 1, Exercise 1, INF1340, Fall, 2014. Grade to gpa conversion
 This module contains one function grade_to_gpa. It can be passed a parameter
 that is an integer (0-100) or a letter grade (A+, A, A-, B+, B, B-, or FZ). All
 other inputs will result in an error.
 Example:
 $ python exercise1.py
 """
-__author__ = 'Susan Sim'
+__author__ = 'Xiuhua Ke'
 __email__ = "ses@drsusansim.org"
 __copyright__ = "2014 Susan Sim"
 __license__ = "MIT License"
@@ -84,7 +84,8 @@ def grade_to_gpa(grade):
         gpa = 2.7
     else:
         gpa = 0.0
-    print(gpa)
+
+    return gpa
 
 grade_to_gpa("A+")
 
