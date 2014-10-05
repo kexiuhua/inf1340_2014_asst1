@@ -7,10 +7,8 @@ Example:
 $ python exercise1.py
 """
 __author__ = 'Xiuhua Ke'
-__email__ = "ses@drsusansim.org"
-__copyright__ = "2014 Susan Sim"
-__license__ = "MIT License"
-__status__ = "Prototype"
+__email__ = "xiuhua.ke@mail.utoronto.ca"
+__copyright__ = "2014 Xiuhua Ke"
 # imports one per line
 
 def grade_to_gpa(grade):
