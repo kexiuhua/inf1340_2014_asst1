@@ -12,10 +12,10 @@ __copyright__ = "2014 Xiuhua Ke"
 
 # imports one per line
 
-def checksum (upc):
+def checksum(upc):
     """
     Checks if the digits in a UPC is consistent with checksum
-    036000291452
+
  :param upc: a 12-digit universal product code
 
     :return:
@@ -27,18 +27,37 @@ def checksum (upc):
     """
 
     # check type of input
-    # raise TypeError if not string
+    # raise:
+    # TypeError (if paramiter is not a string)
+    if type(upc) is not str:
+        raise(TypeError())
 
     # check length of string
     # raise ValueError if not 12
+    if len(upc) != 12:
+        raise(ValueError())
 
     # convert string to array
     # hint: use the list function
 
     # generate checksum using the first 11 digits provided
+    upcList = list(upc)
+
+    odd = int(upcList[0]) + int(upcList[2]) + int(upcList[4]) + int(upcList[6]) + int(upcList[8]) + int(upcList[10])
+    even = int(upcList[1]) + int(upcList[3]) + int(upcList[5]) + int(upcList[7]) + int(upcList[9])
+    result = even + odd * 3
+
+    modulo = result % 10
+
+    if modulo != 0:
+        result = 10 - modulo
+
     # check against the the twelfth digit
+    if result == int(upc[11]):
+        return True
 
     # return True if they are equal, False otherwise
 
     return False
 
+print(checksum("036000291452"))
