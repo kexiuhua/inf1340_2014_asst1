@@ -17,6 +17,7 @@ def checksum (upc):
     Checks if the digits in a UPC is consistent with checksum
     036000291452
  :param upc: a 12-digit universal product code
+
     :return:
         Boolean: True, checksum is correct
         False, otherwise
